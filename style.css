@@ -1,0 +1,70 @@
+/* RESET */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* CENTRADO EN VIEWPORT */
+.viewport {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* CONTENEDOR PRINCIPAL */
+.container {
+    width: 400px;
+    height: 300px;
+    background-color: #1f2a8a;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    padding: 25px;
+}
+
+/* CADA ESQUINA */
+.corner {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+/* Posicionamiento en esquinas */
+.top-left {
+    justify-self: start;
+    align-self: start;
+}
+
+.top-right {
+    justify-self: end;
+    align-self: start;
+}
+
+.bottom-left {
+    justify-self: start;
+    align-self: end;
+}
+
+.bottom-right {
+    justify-self: end;
+    align-self: end;
+}
+
+/* FIGURAS (TAMAÑO AJUSTADO) */
+.square,
+.circle {
+    width: 55px;
+    height: 55px;
+}
+
+.square {
+    background-color: #6bb5c1;
+}
+
+.circle {
+    background-color: #c85aa5;
+    border-radius: 50%;
+}
